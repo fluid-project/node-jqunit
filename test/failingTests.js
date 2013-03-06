@@ -1,5 +1,5 @@
 var fluid = require("infusion");
-var jqUnit = fluid.require("jqUnit");
+var jqUnit = fluid.require("../lib/jqUnit-node.js", require);
 
 jqUnit.module("Failing Tests Module");
 
@@ -25,4 +25,3 @@ jqUnit.test("Simple assertions and counts", function() {
     jqUnit.assertLeftHand("Assert left hand", value, {a: 1});
     jqUnit.assertRightHand("Assert right hand", {a: 1}, value);
 });
-
