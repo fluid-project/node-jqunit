@@ -5,7 +5,7 @@
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
-        "infusion": "git://github.com/amb26/infusion.git#584ef9cdc6fc9f07092504496bfef8f96f6fafc6",
+        "infusion": "git://github.com/amb26/infusion.git#aaaf47c904021bcc551068f8dff9a8c6df3d3b5b"
     },
     "repository": {
         "type": "git",
