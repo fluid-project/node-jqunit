@@ -1,3 +1,5 @@
+"use strict";
+
 var fluid = require("infusion");
 var jqUnit = fluid.require("../lib/jqUnit-node.js", require);
 
@@ -5,7 +7,7 @@ jqUnit.module("Failing Tests Module");
 
 var colors = fluid.registerNamespace("colors");
 
-jqUnit.onAllTestsDone.addListener(function(data) {
+jqUnit.onAllTestsDone.addListener(function (data) {
     if (data.passed === 0) {
         console.log(colors.stylize("jqUnit selfTest OK - all tests failed", ["green", "bold"]));
     } else {
@@ -13,7 +15,7 @@ jqUnit.onAllTestsDone.addListener(function(data) {
     }
 });
 
-jqUnit.test("Simple assertions and counts", function() {
+jqUnit.test("Simple assertions and counts", function () {
     jqUnit.assertTrue("Assert true", false);
     jqUnit.assertEquals("Assert equals", 1, 2);
     jqUnit.assertNotEquals("Assert not equals", 1, 1);
