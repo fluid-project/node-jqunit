@@ -18,7 +18,7 @@ var fluid = require("infusion");
 var jqUnit = fluid.require(jqUnit); 
 ```
 
-You may use also use plain "require" to load jqUnit, although it is essential that it itself may resolve the fluid framework (infusion).
+You may use also use plain "require" to load jqUnit, although it is essential that it itself may resolve the Fluid framework (infusion).
 
 Then begin by starting a "module" and then issue some tests:
 ```

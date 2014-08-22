@@ -1,3 +1,5 @@
+"use strict";
+
 var fluid = require("infusion");
 var jqUnit = fluid.require("../lib/jqUnit-node.js", require);
 
@@ -23,6 +25,7 @@ jqUnit.test("Deep equivalence tests", function() {
     jqUnit.assertLeftHand("Assert left hand", {a: 1}, value);
     jqUnit.assertRightHand("Assert right hand", value, {a: 1});
 });
+
 fluid.defaults("fluid.tests.myTestTree", {
     gradeNames: ["fluid.test.testEnvironment", "autoInit"],
     components: {
@@ -38,7 +41,7 @@ fluid.defaults("fluid.tests.myTestTree", {
 /** Test IoC testing framework **/
 
 fluid.defaults("fluid.tests.cat", {
-    gradeNames: ["fluid.littleComponent", "autoInit"],
+    gradeNames: ["fluid.littleComponent", "autoInit"]
 });
 
 fluid.tests.cat.preInit = function (that) {
