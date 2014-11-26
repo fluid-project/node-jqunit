@@ -5,7 +5,7 @@
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
-        "infusion": "git://github.com/fluid-project/infusion.git#d5b2409f435f1c2a79914748b956891dcb065f94"
+        "infusion": "git://github.com/fluid-project/infusion.git#df5f8cfabf815a4086b778e73125c3c952dda4ec"
     },
     "devDependencies": {
         "grunt-shell": "0.6.4",
