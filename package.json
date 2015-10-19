@@ -1,11 +1,11 @@
 {
     "name": "jqUnit",
     "description": "An XUnit unit testing framework (in the style of JUnit) to node.js, using QUnit as the underlying engine",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
-        "infusion": "git://github.com/fluid-project/infusion.git#df5f8cfabf815a4086b778e73125c3c952dda4ec"
+        "infusion": "2.0.0-dev.20151007T134312Z.8c33cd4"
     },
     "devDependencies": {
         "grunt-shell": "0.6.4",
@@ -21,10 +21,5 @@
         "node": ">=0.8.0"
     },
     "main": "./lib/jqUnit-node.js",
-    "licenses": [
-        {
-            "type": "BSD-3-Clause",
-            "url": "http://www.opensource.org/licenses/BSD-3-Clause"
-        }
-    ]
+    "license" : "BSD-3-Clause"
 }

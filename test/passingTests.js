@@ -1,7 +1,7 @@
 "use strict";
 
 var fluid = require("infusion");
-var jqUnit = fluid.require("../lib/jqUnit-node.js", require);
+var jqUnit = require("../lib/jqUnit-node.js");
 
 jqUnit.module("Passing Tests Module");
 
@@ -27,7 +27,7 @@ jqUnit.test("Deep equivalence tests", function() {
 });
 
 fluid.defaults("fluid.tests.myTestTree", {
-    gradeNames: ["fluid.test.testEnvironment", "autoInit"],
+    gradeNames: "fluid.test.testEnvironment",
     components: {
         cat: {
             type: "fluid.tests.cat"
@@ -41,19 +41,23 @@ fluid.defaults("fluid.tests.myTestTree", {
 /** Test IoC testing framework **/
 
 fluid.defaults("fluid.tests.cat", {
-    gradeNames: ["fluid.littleComponent", "autoInit"]
+    gradeNames: "fluid.component",
+    invokers: {
+        makeSound: "fluid.tests.cat.makeSound()"
+    }
 });
 
-fluid.tests.cat.preInit = function (that) {
-    that.makeSound = function () {
-        return "meow";
-    };
+fluid.tests.cat.makeSound = function () {
+    return "meow";
 };
 
 /** Test Case Holder - holds declarative representation of test cases **/
 
 fluid.defaults("fluid.tests.catTester", {
-    gradeNames: ["fluid.test.testCaseHolder", "autoInit"],
+    gradeNames: "fluid.test.testCaseHolder",
+    invokers: {
+        testMeow: "fluid.tests.globalCatTest"
+    },
     modules: [ /* declarative specification of tests */ {
         name: "IoC-driven Cat test case",
         tests: [{
@@ -75,9 +79,6 @@ fluid.tests.globalCatTest = function (catt) {
     jqUnit.assertEquals("Sound", "meow", catt.makeSound());
 };
 
-fluid.tests.catTester.preInit = function (that) {
-    that.testMeow = fluid.tests.globalCatTest;
-};
 
 fluid.test.runTests([
     "fluid.tests.myTestTree"
