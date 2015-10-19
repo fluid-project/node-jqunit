@@ -15,7 +15,7 @@ node fixtureFile.js
 To write a fixture file, begin with
 ```
 var fluid = require("infusion");
-var jqUnit = fluid.require("jqUnit"); 
+var jqUnit = require("jqUnit");
 ```
 
 You may use also use plain "require" to load jqUnit, although it is essential that it itself may resolve the Fluid framework (infusion).
@@ -24,7 +24,7 @@ Then begin by starting a "module" and then issue some tests:
 ```
 jqUnit.module("My Module");
 
-jqUnit.test("My test case", function() {
+jqUnit.test("My test case", function () {
     jqUnit.assertTrue("I assert that this is true", true);
     }
 );
