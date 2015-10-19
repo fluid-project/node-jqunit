@@ -1,5 +1,5 @@
 {
-    "name": "jqUnit",
+    "name": "node-jqunit",
     "description": "An XUnit unit testing framework (in the style of JUnit) to node.js, using QUnit as the underlying engine",
     "version": "1.0.0",
     "author": "Fluid Project",
