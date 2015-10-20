@@ -1,7 +1,7 @@
 {
     "name": "node-jqunit",
     "description": "An XUnit unit testing framework (in the style of JUnit) to node.js, using QUnit as the underlying engine",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
