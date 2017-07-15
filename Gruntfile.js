@@ -13,15 +13,14 @@ module.exports = function(grunt) {
     "use strict";
 
     grunt.initConfig({
-        jshint: {
-            all: ["lib/**/*.js", "test/**/*.js"],
-            buildScripts: ["Gruntfile.js"],
-            options: {
-                jshintrc: true
-            }
+        eslint: {
+            all: ["lib/**/*.js", "test/**/*.js", "./*.js"],
+
         }
     });
 
-    grunt.loadNpmTasks("grunt-contrib-jshint");
+    grunt.loadNpmTasks("fluid-grunt-eslint");
+
+    grunt.registerTask("lint", "Apply eslint", ["eslint"]);
     
 };
