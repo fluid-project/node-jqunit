@@ -1,11 +1,11 @@
 {
     "name": "node-jqunit",
     "description": "An XUnit unit testing framework (in the style of JUnit) for node.js, using QUnit as the underlying engine",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
-        "infusion": "amb26/infusion#GPII-2483"
+        "infusion": "3.0.0-dev.20170724T165035Z.eee50c1"
     },
     "devDependencies": {
         "eslint-config-fluid": "1.0.0",
