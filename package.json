@@ -5,7 +5,7 @@
     "author": "Fluid Project",
     "homepage": "http://www.fluidproject.org/",
     "dependencies": {
-        "infusion": "3.0.0-dev.20170713T172705Z.330ed53"
+        "infusion": "amb26/infusion#GPII-2483"
     },
     "devDependencies": {
         "eslint-config-fluid": "1.0.0",
