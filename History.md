@@ -1,3 +1,8 @@
+1.1.8 / 2017-11-17
+==================
+
+* FLUID-6225: Upgraded to version of Infusion where self-deduping no longer races uncaught exception handler
+
 1.1.7 / 2017-08-30
 ==================
 
