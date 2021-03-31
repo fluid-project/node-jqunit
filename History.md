@@ -1,3 +1,8 @@
+1.1.9 / 2021-03-31
+==================
+
+* Updated to version of Infusion that doesn't produce circular module warning on startup in node 14.x
+
 1.1.8 / 2017-11-17
 ==================
 
